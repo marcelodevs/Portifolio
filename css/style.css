@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+/* DARK MODE */
+
+body {
+    background: black;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+body.active {
+    background-color: white;
+}
+
+#all.active {
+    color: black;
+}
+
+#alll.active {
+    color: black;
+}
+
+#allll.active {
+    color: black;
+}
+
+#projeto.active {
+    color: black;
+}
+
+/* GLOBAL */
+
+@font-face {
+    font-family: "Game";
+    src: url(../assets/BLUECHERIES.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2::before {
+    content: "|" " ";
+}
+
+main {
+    font-family: "Game";
+    transition: all 0.5s;
+}
+
+section {
+    color: white;
+}
+
+/* MENU */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    width: 102vw;
+    height: 2.6rem;
+    top: -1.5%;
+    left: -40px;
+    border: 15px solid rgb(66, 63, 63);
+    background: rgb(66, 63, 63);
+    font-size: 30px;
+    list-style: none;
+    position: fixed;
+    margin-top: 10px;
+    z-index: 999;
+    padding: 10px;
+    font-family: "Game";
+    color: white;
+}
+
+li {
+    padding: 0.4em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s all ease-in-out;
+}
+
+a:hover {
+    color: #f08;
+}
+
+.btn {
+    width: 2.5em;
+    height: 1.1em;
+    border: 5px solid #fff;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+}
+
+.btn.active::before {
+    left: 43px;
+}
+
+/* SESSÃO DE INÍCIO */
+
+#inicio {
+    margin-top: 100px;
+    width: 500px;
+    color: white;
+}
+
+/* SESSÃO SOBRE MIM, FORMULÁRIO, INÍCIO */
+
+#form,
+#inicio,
+#my {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 230px;
+    width: 800px;
+    margin-right: 220px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+
+.myimg,
+.formimg,
+.inicioimg {
+    height: 300px;
+    width: 300px;
+    filter: drop-shadow(0 0 4rem purple);
+}
+
+.imgright {
+    cursor: pointer;
+    animation: rot 1s infinite alternate ease-in-out;
+}
+
+@keyframes rot {
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/* SESSÃO DE CURSOS */
+
+.cursoimg {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+#curso {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.container {
+    height: 18rem;
+    width: 12.6rem;
+    text-align: center;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+    font-size: 23px;
+}
+
+.container:hover {
+    transform: scale(1.1) translateY(-1.4em);
+}
+
+.grid,
+.projeto {
+    display: grid;
+    grid-template-rows: 330px;
+}
+
+.linha1,
+.linha3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.linha2,
+.linha4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#web,
+#py,
+#java,
+#RC,
+#lg,
+#sql {
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+.container p {
+    width: 12.5rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    margin-top: 30px;
+    background-color: #f5f5;
+}
+
+.container strong {
+    height: 8em;
+}
+
+#sql {
+    margin-bottom: 100px;
+}
+
+/* SESSÃO DE PROJETOS */
+
+#projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projeto1,
+.projeto2,
+.projeto3,
+.projeto4,
+.projeto5,
+.projeto6 {
+    text-align: center;
+    transition: all .6s ease-in-out;
+}
+
+.projeto1:hover,
+.projeto2:hover,
+.projeto3:hover,
+.projeto4:hover,
+.projeto5:hover,
+.projeto6:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* SESSÃO DE REDES SOCIAIS */
+
+footer {
+    text-align: center;
+}
+
+#redes {
+    background: rgb(66, 63, 63);
+    border-radius: 60px;
+}
+
+.img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1) translateY(-0.7em);
+}
