@@ -38,6 +38,11 @@ function face()
     window.location.href="https://facebook.comfef/";
 }
 
+function git()
+{
+    window.location.href = "https://github.com/marcelodevs";
+}
+
 /* FIM DE REDES SOCIAIS */
 
 /* APARECER LETRAS */
